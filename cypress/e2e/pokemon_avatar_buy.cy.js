@@ -2,8 +2,8 @@ describe('Проверка покупки нового аватара для с�
     it('Верный пароль и верный логин', function () {
         cy.visit('https://pokemonbattle.me');
         cy.wait(2000);
-        cy.get('input[type="email"]').type('lenivayazopa@bk.ru');
-        cy.get('input[type="password"]').type('123321Q');
+        cy.get('input[type="email"]').type('USER_LOGIN');
+        cy.get('input[type="password"]').type('USER_PASSWORD');
         cy.get('button[type="submit"]').click();
         cy.wait(2000);
         cy.get('.header__btns > [href="/shop"]').click();
